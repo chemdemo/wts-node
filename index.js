@@ -2,7 +2,7 @@
 * @Author: dm.yang
 * @Date:   2015-04-05 15:55:27
 * @Last Modified by:   dm.yang
-* @Last Modified time: 2015-04-09 16:36:06
+* @Last Modified time: 2015-04-09 16:48:26
 */
 
 'use strict';
@@ -85,7 +85,7 @@ function dataHandle(data) {
     switch(msg.cmd) {
         case 'client:ready':
             client.clientId = msg.clientId;
-            send2monit({cmd: 'client:online', conf: msg.conf});
+            send2monit({cmd: 'client:online', conf: conf.conf});
             break;
 
         case 'client:destroy':
