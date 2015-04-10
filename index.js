@@ -2,12 +2,13 @@
 * @Author: dm.yang
 * @Date:   2015-04-05 15:55:27
 * @Last Modified by:   dm.yang
-* @Last Modified time: 2015-04-09 16:48:26
+* @Last Modified time: 2015-04-10 14:48:16
 */
 
 'use strict';
 
 var net = require('net');
+var path = require('path');
 var fs = require('fs');
 var pty = require('pty.js');
 var ProtoBuf = require('protobufjs');
@@ -17,7 +18,7 @@ var env = process.env.NODE_ENV || (process.env.NODE_ENV = 'development');
 var isDev = !!(process.platform.match(/win/) || env !== 'production');
 
 var conf = require('./conf');
-var builder = ProtoBuf.loadProtoFile('./socket.proto');
+var builder = ProtoBuf.loadProtoFile(path.resolve(__dirname, './socket.proto'));
 var Proto = builder.build('Socket');
 var Input = Proto.Input;
 var Output = Proto.Output;
