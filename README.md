@@ -2,13 +2,15 @@
 
 Node.js client for [WTS system](https://github.com/chemdemo/wts-monit).
 
-### Installation
+### Usage
+
+- install
 
 ``` bash
 npm install wts-node && npm i
 ```
 
-### Configuration
+- config
 
 Assign group for this client.
 
@@ -16,13 +18,13 @@ Assign group for this client.
 cd wts-node && vim conf.js
 ```
 
-### debug
+- launch with debug mode
 
 ``` bash
 node index.js
 ```
 
-### deploy(via pm2)
+- deploy(via pm2)
 
 ``` bash
 pm2 start pm2_deploy.json
