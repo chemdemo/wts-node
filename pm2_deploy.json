@@ -1,0 +1,13 @@
+{
+    "name": "rshell-node",
+    "script": "index.js",
+    "instances": "1",
+    "exec_mode"  : "fork_mode",
+    "out_file": "./logs/pm2.access.log",
+    "error_file": "./logs/pm2.error.log",
+    "merge_logs": true,
+    "exec_interpreter" : "node",
+    "env": {
+        "NODE_ENV": "production"
+    }
+}
