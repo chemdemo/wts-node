@@ -12,10 +12,8 @@ npm install wts-node && npm i
 
 - config
 
-Assign group for this client.
-
 ``` bash
-cd wts-node && vim conf.js
+cd wts-node && vim conf.js # you should assign group for one client.
 ```
 
 - launch with debug mode
