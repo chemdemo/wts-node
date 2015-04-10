@@ -1,4 +1,5 @@
 # wts-node
+[![NPM version](https://badge.fury.io/js/wts-node.png)](https://npmjs.org/package/wts-node)
 
 Node.js client for [WTS system](https://github.com/chemdemo/wts-monit).
 
