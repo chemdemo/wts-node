@@ -1,5 +1,5 @@
 {
-    "name": "rshell-node",
+    "name": "wts-node",
     "script": "index.js",
     "instances": "1",
     "exec_mode"  : "fork_mode",
