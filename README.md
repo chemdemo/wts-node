@@ -11,6 +11,12 @@ Node.js client for [WTS system](https://github.com/chemdemo/wts-monit).
 npm install wts-node && npm i
 ```
 
+or just clone from github:
+
+``` bash
+git clone https://github.com/chemdemo/wts-monit.git
+```
+
 - config
 
 ``` bash
